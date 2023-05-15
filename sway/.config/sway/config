@@ -49,12 +49,11 @@ output DVI-D-1 mode 1366x768
 #
 # Example configuration:
 #
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
+input "type:keyboard" {
+       xkb_layout ir,us
+       #xkb_variant 
+       xkb_options grp:alt_shift_toggle
+   }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
