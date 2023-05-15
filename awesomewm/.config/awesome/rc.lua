@@ -416,6 +416,10 @@ globalkeys = mytable.join(
               {description = "select next", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
+    
+
+    awful.key({ modkey, }, ".", function() awful.spawn(browser)					end,
+    { description = "Open Browser" , group = "awesome" }),
 
     awful.key({ modkey, "Control" }, "n", function ()
         local c = awful.client.restore()
