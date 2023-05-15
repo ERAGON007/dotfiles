@@ -3,6 +3,10 @@ theme = "dracula"
 [editor]
 line-number = "relative"
 mouse = false
+auto-format = false
+idle-timeout = 0
+completion-trigger-len = 1
+bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -11,12 +15,6 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
-
-[editor]
-auto-format = false
-idle-timeout = 0
-completion-trigger-len = 1
-bufferline = always
 
 [editor.statusline]
 left = ["mode", "spinner"]
@@ -40,11 +38,6 @@ display-messages = true
 
 [editor.whitespace]
 render = "all"
-
-[editor.whitespace.render]
-space = "all"
-tab = "all"
-newline = "none"
 
 [editor.whitespace.characters]
 space = "."
