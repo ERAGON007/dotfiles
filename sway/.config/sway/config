@@ -52,6 +52,7 @@ output DVI-D-1 mode 1366x768
 input "type:keyboard" {
        xkb_layout ir,us
        #xkb_variant 
+       xkb_numlock enabled
        xkb_options grp:alt_shift_toggle
    }
 #
