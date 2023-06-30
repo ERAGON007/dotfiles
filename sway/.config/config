@@ -19,13 +19,13 @@ set $term kitty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 #set $menu /usr/bin/wofi | wofi --show drun | xargs swaymsg exec --
-set $menu wofi --show drun | xargs swaymsg exec --
+set $menu /usr/bin/wofi --show drun | xargs swaymsg exec --
 #set $menu bemenu-run
 
-### Output configuration
+## Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1366x768.png fill
 #
 # Example configuration:
 #
