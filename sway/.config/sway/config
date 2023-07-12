@@ -29,7 +29,22 @@ output * bg ~/.config/wallpapers/418399.jpg fill
 #
 # Example configuration:
 #
-output DVI-D-1 mode 1366x768
+output DVI-D-1 mode 1920x1200
+
+# Enable XWayland support for X11 Apps
+#xwayland force
+
+#exec swaymsg border pixel 1
+# Minimize the borders
+default_border pixel 1
+default_floating_border pixel 1
+
+gaps inner 3
+gaps outer 2
+
+smart_gaps on
+
+
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -217,4 +232,9 @@ bar {
     #}
 }
 
+# Include my separated settings too
+include $HOME/.config/sway/sway.d/*.conf
+
+# This was here by default, leaving it to be here for now
 include /etc/sway/config.d/*
+
