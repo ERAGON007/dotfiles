@@ -1,0 +1,27 @@
+
+# {dotfiles}/bombadil.toml
+
+dotfiles_dir = "dotfiles"
+
+[settings]
+# An array of toml files paths containing the variables to inject in your templatized dotfiles
+# You can have multiple var files as long as variable names does not colide.
+vars = [ "vars.toml" ]
+
+# An array of post install shell commands
+posthooks = [ "sway reload" ]
+
+[settings.dots]
+alacritty = { source = "alacritty/alacritty.yml", target = ".config/alacritty/alacritty.yml" }
+git = { source = "git/.gitconfig", target = ".gitconfig" }
+hypr = { source = "hypr", target = ".config/hyprland" }
+nvim = { source = "nvim", target = ".config/nvim" }
+zsh = { source = "zsh/.zshrc", target = ".zshrc" }
+awesomewm = { source = "awesomewm", target = ".config/awesomewm" }
+fontconfig = { source = "fontconfig", target = ".config/fontconfig" }
+helix = { source = "helix", target = ".config/helix" }
+kitty = { source = "kitty", target = ".config/kitty" }
+sway = { source = "sway", target = ".config/sway" }
+waybar = { source = "waybar", target = ".config/waybar" }
+
+
