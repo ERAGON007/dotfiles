@@ -9,7 +9,7 @@ dotfiles_dir = "dotfiles"
 vars = [ "vars.toml" ]
 
 # An array of post install shell commands
-posthooks = [ "sway reload" ]
+posthooks = [ "chmod +x ~/bins/sway_wallpaper_changer.sh", "sway reload"]
 
 [settings.dots]
 alacritty = { source = "alacritty/alacritty.yml", target = ".config/alacritty/alacritty.yml" }
@@ -23,5 +23,6 @@ helix = { source = "helix", target = ".config/helix" }
 kitty = { source = "kitty", target = ".config/kitty" }
 sway = { source = "sway", target = ".config/sway" }
 waybar = { source = "waybar", target = ".config/waybar" }
-
+bins = { source = "bins", target = "bins"  } # I store binaries and bash scripts here
+wallpapers = { source = "wallpapers", target = "wallpapers"  }
 

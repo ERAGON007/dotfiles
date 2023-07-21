@@ -57,6 +57,17 @@ return require('packer').startup(function(use)
     })
 
 
+    --[[use({
+        'willothy/nvim-cokeline',
+        requires = {
+            "nvim-lua/plenary.nvim",        -- Required for v0.4.0+
+            "kyazdani42/nvim-web-devicons", -- If you want devicons
+        },
+        config = function()
+            require("cokeline").setup()
+        end
+    })]]
+
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
 end)

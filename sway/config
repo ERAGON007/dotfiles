@@ -25,11 +25,13 @@ set $menu /usr/bin/wofi --show drun | xargs swaymsg exec --
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/.config/wallpapers/418399.jpg fill
+output * bg ~/wallpapers/1131833.jpg fill
 #
 # Example configuration:
 #
 output DVI-D-1 mode 1920x1200
+
+#exec "sleep 3 ; ~/bins/sway_wallpaper_changer.sh"
 
 # Enable XWayland support for X11 Apps
 #xwayland force
