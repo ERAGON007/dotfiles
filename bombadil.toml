@@ -28,3 +28,8 @@ bins = { source = "bins", target = "bins"  } # I store binaries and bash scripts
 wallpapers = { source = "wallpapers", target = "wallpapers"  }
 fonts = { source = "fonts", target = ".local/share/fonts" }
 
+# Tmux
+tmux_plugins = { source = ".tmux/plugins", target = ".tmux/plugins" }
+tmux_config = { source = ".tmux/.tmux.conf", target = ".tmux.conf" }
+
+
