@@ -29,7 +29,7 @@ wallpapers = { source = "wallpapers", target = "wallpapers"  }
 fonts = { source = "fonts", target = ".local/share/fonts" }
 
 # Tmux
-tmux_plugins = { source = ".tmux/plugins", target = ".tmux/plugins" }
+tmux = { source = ".tmux", target = ".tmux" }
 tmux_config = { source = ".tmux/.tmux.conf", target = ".tmux.conf" }
 
 
