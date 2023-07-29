@@ -15,9 +15,12 @@ return require('packer').startup(function(use)
     }
 
     -- Rose-pine nvim theme
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
+    --use({ 'rose-pine/neovim', as = 'rose-pine' })
+    --vim.cmd('colorscheme rose-pine')
 
-    vim.cmd('colorscheme rose-pine')
+    -- tokyonight btw
+    use( { 'folke/tokyonight.nvim' } )
+    vim.cmd('colorscheme tokyonight-night');
 
     -- Treesitter for syntax highlighting etc...
     use({ 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'} })
@@ -69,6 +72,21 @@ return require('packer').startup(function(use)
     })]]
 
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+
+
+    -- Barbecue
+    use({
+        "utilyre/barbecue.nvim",
+        tag = "*",
+        requires = {
+            "SmiteshP/nvim-navic",
+            "nvim-tree/nvim-web-devicons", -- optional dependency
+        },
+        after = "nvim-web-devicons", -- keep this if you're using NvChad
+        config = function()
+            require("barbecue").setup()
+        end,
+    })
 
 end)
 

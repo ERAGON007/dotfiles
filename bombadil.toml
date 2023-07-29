@@ -17,6 +17,7 @@ git = { source = "git/.gitconfig", target = ".gitconfig" }
 hypr = { source = "hypr", target = ".config/hyprland" }
 nvim = { source = "nvim", target = ".config/nvim" }
 zsh = { source = "zsh/.zshrc", target = ".zshrc" }
+p10k = { source = "zsh/p10k.zsh", target = ".p10k.zsh"  }
 awesomewm = { source = "awesomewm", target = ".config/awesomewm" }
 fontconfig = { source = "fontconfig", target = ".config/fontconfig" }
 helix = { source = "helix", target = ".config/helix" }
@@ -25,4 +26,5 @@ sway = { source = "sway", target = ".config/sway" }
 waybar = { source = "waybar", target = ".config/waybar" }
 bins = { source = "bins", target = "bins"  } # I store binaries and bash scripts here
 wallpapers = { source = "wallpapers", target = "wallpapers"  }
+fonts = { source = "fonts", target = ".local/share/fonts" }
 
