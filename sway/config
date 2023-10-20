@@ -25,11 +25,11 @@ set $menu /usr/bin/wofi --show drun | xargs swaymsg exec --
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/wallpapers/1072438.jpg fill
+output * bg ~/wallpapers/wallpaper2.jpg fill
 #
 # Example configuration:
 #
-output DVI-D-1 mode 1920x1200
+output DP-2 mode 1920x1200
 
 #exec "sleep 3 ; ~/bins/sway_wallpaper_changer.sh"
 
@@ -38,11 +38,11 @@ output DVI-D-1 mode 1920x1200
 
 #exec swaymsg border pixel 1
 # Minimize the borders
-default_border pixel 3
-default_floating_border pixel 2
+default_border pixel 1
+default_floating_border pixel 1
 
-gaps inner 4
-gaps outer 2
+gaps inner 2
+gaps outer 1
 
 smart_gaps on
 
