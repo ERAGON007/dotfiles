@@ -1,2 +1,0 @@
-require("eragon")
---print("Hello")

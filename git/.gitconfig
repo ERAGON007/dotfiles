@@ -2,4 +2,7 @@
 	defaultBranch = main
 [user]
 	email = turk6486@gmail.com
-	name = ERAGON007
+    name = ERAGON007
+
+[credential]
+    cacheOptions = "--timeout 300"
