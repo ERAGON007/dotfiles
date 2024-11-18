@@ -19,7 +19,7 @@ set $term kitty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 #set $menu /usr/bin/bemenu | bemenu | xargs swaymsg exec --
-set $menu /usr/bin/wofi --show drun | xargs swaymsg exec --
+set $menu wmenu-run
 
 ### Output configuration
 #
@@ -220,8 +220,8 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    swaybar_command waybar
-    #position top
+    #swaybar_command waybar
+    position top
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.

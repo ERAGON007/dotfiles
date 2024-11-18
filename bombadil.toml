@@ -15,7 +15,7 @@ posthooks = [ "chmod +x ~/bins/sway_wallpaper_changer.sh", "sway reload"]
 alacritty = { source = "alacritty/alacritty.yml", target = ".config/alacritty/alacritty.yml" }
 git = { source = "git/.gitconfig", target = ".gitconfig" }
 hypr = { source = "hypr", target = ".config/hyprland" }
-nvim = { source = "nvim", target = ".config/nvim" }
+#nvim = { source = "nvim", target = ".config/nvim" }
 zsh = { source = "zsh/.zshrc", target = ".zshrc" }
 p10k = { source = "zsh/.p10k.zsh", target = ".p10k.zsh"  }
 awesomewm = { source = "awesomewm", target = ".config/awesomewm" }
@@ -26,7 +26,7 @@ sway = { source = "sway", target = ".config/sway" }
 waybar = { source = "waybar", target = ".config/waybar" }
 bins = { source = "bins", target = "bins"  } # I store binaries and bash scripts here
 wallpapers = { source = "wallpapers", target = "wallpapers"  }
-fonts = { source = "fonts", target = ".local/share/fonts" }
+#fonts = { source = "fonts", target = ".local/share/fonts" }
 
 # Tmux
 tmux = { source = ".tmux", target = ".tmux" }
